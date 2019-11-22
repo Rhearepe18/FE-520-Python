@@ -1,13 +1,8 @@
 
-# coding: utf-8
-
-# In[1]:
-
 
 #Question 1
 
 #write a function to remove duplicate entries in a list of integers. 
-
 
 def Remove(duplicate): 
     final_list = [] 
@@ -17,24 +12,11 @@ def Remove(duplicate):
     return final_list 
       
 
-
-# In[2]:
-
-
 duplicate = [2, 4, 10, 20, 5, 2, 20, 4,4,5,3,2,3,2,2,6,7,5,7,33,12,43] 
 print(Remove(duplicate)) 
 
-
-# In[3]:
-
-
 duplicate = [2,2,2,3,3,3,3,3,3,2,2,3,2,1,4,1,4,1,6,5,6,5]
 print(Remove(duplicate))
-
-
-# In[18]:
-
-
 
 #Question 2
 
@@ -51,15 +33,7 @@ def subset(arg):
         sets.extend(listing)
     return sets
 
-
-# In[19]:
-
-
 subset([1, 2, 3])
-
-
-# In[20]:
-
 
 #Question 3
 #Write a function to remove white space from strings. Input is a string.
@@ -68,24 +42,13 @@ subset([1, 2, 3])
 def removeSpaces(string):
     string = string.replace(' ','')
     return string
-     
-
-
-# In[21]:
-
-
+ 
 string = "text with spaces  "
 print(removeSpaces(string))
 
 
-# In[22]:
-
-
 string = "   The stock market crashed    "
 print(removeSpaces(string))
-
-
-# In[23]:
 
 
 #Question 4
@@ -110,29 +73,15 @@ def dict(dictionary,key,value):
         dictionary[key] = [dictionary[key], value]
 
 
-# In[24]:
-
-
 dict(mydictionary,'a',5)
 mydictionary
-
-
-# In[25]:
-
 
 dict(mydictionary,'c',10)
 mydictionary
 
 
-# In[26]:
-
-
 dict(mydictionary,'a',20)
 mydictionary
-
-
-# In[90]:
-
 
 #Bonus questions
 
@@ -160,24 +109,16 @@ def twoSum(nums, target):
                 return ls
 
 
-# In[91]:
-
 
 nums = [2, 7, 11, 15]
 target = 9
 print(twoSum(nums, target))
 
 
-# In[93]:
-
 
 nums = [2, 7, 11, 15, 30]
 target = 18
 print(twoSum(nums, target))
-
-
-# In[141]:
-
 
 #Given a 32-bit signed integer, reverse digits of an integer.
 
@@ -206,19 +147,13 @@ def reverse(x):
             return 0
 
 
-# In[142]:
+
 
 
 reverse(432)
 
 
-# In[143]:
-
-
 reverse(234)
-
-
-# In[144]:
 
 
 reverse(-3425)
